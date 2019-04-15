@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: investment-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/investment-service
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    open-in-view: false
+    show-sql: true
+  liquibase:
+    drop-first: true
+    enabled: true
+  jackson:
+    deserialization:
+      FAIL_ON_NULL_FOR_PRIMITIVES: true

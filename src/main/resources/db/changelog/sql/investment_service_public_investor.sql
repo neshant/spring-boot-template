@@ -1,0 +1,8 @@
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b111c-5c09-11e9-8647-d663bd873d93', 'Investor1', 'Investor1', '4d8de96a-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b13d8-5c09-11e9-8647-d663bd873d93', 'Investor2', 'Investor2', '4d8decc6-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1536-5c09-11e9-8647-d663bd873d93', 'Investor3', 'Investor3', '4d8df04a-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1676-5c09-11e9-8647-d663bd873d93', 'Investor4', 'Investor4', '4d8de96a-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1b30-5c09-11e9-8647-d663bd873d93', 'Investor5', 'Investor5', '4d8decc6-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1ca2-5c09-11e9-8647-d663bd873d93', 'Investor6', 'Investor6', '4d8df04a-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1dd8-5c09-11e9-8647-d663bd873d93', 'Investor7', 'Investor7', '4d8de96a-5c02-11e9-8647-d663bd873d93');
+INSERT INTO public.investor (id, name, description, client_id) VALUES ('b85b1f04-5c09-11e9-8647-d663bd873d93', 'Investor8', 'Investor8', '4d8decc6-5c02-11e9-8647-d663bd873d93');

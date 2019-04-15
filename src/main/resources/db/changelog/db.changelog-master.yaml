@@ -1,0 +1,138 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: neshant
+      changes:
+      - sql:
+          dbms: postgresql
+          sql: CREATE EXTENSION IF NOT EXISTS pgcrypto
+  - changeSet:
+      id: 2
+      author: neshant
+      changes:
+      - createTable:
+          tableName: client
+          columns:
+          - column:
+              name: id
+              type: uuid
+              defaultValueComputed: gen_random_uuid()
+              constraints:
+                nullable: false
+                primaryKey: true
+          - column:
+              name: name
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: description
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: created_at
+              type: timestamp
+              defaultValueComputed: now()
+
+  - changeSet:
+      id: 3
+      author: neshant.sharma
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          path: ./sql/investment_service_public_client.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+
+  - changeSet:
+      id: 3
+      author: neshant
+      changes:
+      - createTable:
+          tableName: investor
+          columns:
+          - column:
+              name: id
+              type: uuid
+              defaultValueComputed: gen_random_uuid()
+              constraints:
+                nullable: false
+                primaryKey: true
+          - column:
+              name: name
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: description
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: client_id
+              type: uuid
+          - column:
+              name: created_at
+              type: timestamp
+              defaultValueComputed: now()
+
+  - changeSet:
+      id: 4
+      author: neshant.sharma
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          path: ./sql/investment_service_public_investor.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+
+  - changeSet:
+      id: 5
+      author: neshant
+      changes:
+      - createTable:
+          tableName: fund
+          columns:
+          - column:
+              name: id
+              type: uuid
+              defaultValueComputed: gen_random_uuid()
+              constraints:
+                nullable: false
+                primaryKey: true
+          - column:
+              name: name
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: description
+              type: varchar(255)
+              constraints:
+                nullable: false
+          - column:
+              name: price
+              type: int
+              constraints:
+                nullable: false
+          - column:
+              name: investor_id
+              type: uuid
+          - column:
+              name: created_at
+              type: timestamp
+              defaultValueComputed: now()
+
+  - changeSet:
+      id: 6
+      author: neshant.sharma
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          path: ./sql/investment_service_public_fund.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
