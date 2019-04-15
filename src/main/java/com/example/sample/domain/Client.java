@@ -20,7 +20,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
@@ -38,9 +37,7 @@ public class Client {
     @GeneratedValue(generator = "uuid-gen")
     @Setter(AccessLevel.PRIVATE)
     UUID id;
-    @Setter(AccessLevel.PRIVATE)
     String name;
-    @Setter(AccessLevel.PRIVATE)
     String description;
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -49,7 +46,6 @@ public class Client {
             fetch = FetchType.EAGER
     )
     @JoinColumn(name = "client_id")
-    @Setter(AccessLevel.PRIVATE)
     Set<Investor> investors;
 
     @Column(updatable = false)

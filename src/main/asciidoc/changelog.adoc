@@ -1,0 +1,16 @@
+== Changelog
+
+[discrete]
+=== v2019-04-03
+
+* Added all endpoints
+
+[discrete]
+=== v2019-04-05
+
+* Added `ability` to get <<Clients>>
+
+[discrete]
+=== v2019-04-10
+
+* Add changelog at link:/changelog.html[]

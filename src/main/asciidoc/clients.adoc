@@ -1,0 +1,14 @@
+== Clients
+=== Create a client with Investor and its funds
+
+`*POST* /clients`
+
+.Client Request for creating a Client
+include::{snippets}/clients/request-fields.adoc[]
+.Response fields
+include::{snippets}/clients/response-fields.adoc[]
+
+.Example
+include::{snippets}/clients/request-body.adoc[]
+.Response
+include::{snippets}/clients/http-response.adoc[]

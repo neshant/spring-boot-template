@@ -1,0 +1,13 @@
+= Service API Guide
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:toc-title: Rest Api Docs
+:sectlinks:
+:table-caption!:
+
+include::changelog.adoc[]
+
+include::clients.adoc[]
