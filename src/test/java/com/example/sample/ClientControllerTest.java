@@ -1,13 +1,11 @@
 package com.example.sample;
 
-import com.example.sample.domain.Client;
 import com.example.sample.domain.Fund;
 import com.example.sample.domain.Investor;
 import com.example.sample.request.ClientRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.http.HttpHeaders;
 import org.springframework.restdocs.RestDocumentationContextProvider;
 import org.springframework.restdocs.operation.preprocess.Preprocessors;
 

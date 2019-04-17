@@ -2,7 +2,7 @@
 
 ### Guides
 
-1. Start the Docker container using maven plugin inside Plugins/docker/start
+1. Start the Docker container using start services task in docker services task
 
 2. Start the spring boot server using any IDE
 
