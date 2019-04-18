@@ -108,4 +108,3 @@ if (env == 'local') {
 application {
     mainClassName = 'com.example.sample.SpringTemplateApplication'
 }
-
