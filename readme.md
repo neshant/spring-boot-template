@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/daimler-mic/Silver%20Arrows/_apis/build/status/spring-template.CI?branchName=master)](https://dev.azure.com/daimler-mic/Silver%20Arrows/_build/latest?definitionId=2427&branchName=master)
+
 # Getting Started
 
 ### Guides
